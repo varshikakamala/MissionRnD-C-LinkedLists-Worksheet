@@ -22,5 +22,24 @@ struct node {
 };
 
 void sll_012_sort(struct node *head){
-	
+	struct node *newnode = NULL, *temp = NULL;
+	int sum = 0,i=0,k,count=0;
+	temp = head;
+	while (temp->next != NULL)
+	{
+		sum += temp->data;
+		if (temp->data == 2) i++;
+		temp = temp->next;
+		count++;
+	}
+	if (sum!= 0) 
+	{
+		temp = head;
+		k = count - i;
+		while (k != 0)
+		{
+
+		}
+	}
+
 }
