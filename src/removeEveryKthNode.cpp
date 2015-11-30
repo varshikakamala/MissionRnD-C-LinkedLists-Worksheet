@@ -22,8 +22,7 @@ struct node * removeEveryKthNode(struct node *head, int K) {
 	struct node *temp = NULL, *prev = NULL;
 	int count = 1,pos=0,i=1;
 	if(head==NULL) return NULL;
-	else if (K == 0 || K<0)  return head;
-		else if (K == 1)  return NULL;
+	else if (K == 0 || K<0 || K==1)  return NULL;
 		else
 		{
 			temp = head;
@@ -49,6 +48,6 @@ struct node * removeEveryKthNode(struct node *head, int K) {
 				}
 			}
 		}
-	//prev = head;
+	prev = head;
 		return prev;
 }
